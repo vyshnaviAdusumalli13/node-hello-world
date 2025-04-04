@@ -1,16 +1,8 @@
-## This will build and publish docker container to docker hub.
-#
-# TO DO:
-# 1. Set the environment variables DOCKERHUB_USERNAME & DOCKERHUB_PASS
-# 2. Change docker hub repo to yours, i.e,. replace shresthaajay/node-hello-world with your repo.
-#
-## Reference: https://circleci.com/blog/using-circleci-workflows-to-replicate-docker-hub-automated-builds/
-
 version: 2.1
 executors:
   docker-publisher:
     environment:
-      IMAGE_NAME: shresthaajay/node-hello-world-2025
+      IMAGE_NAME: vyshnavia/node-hello-world-2025
     docker:
       - image: circleci/buildpack-deps:stretch
 jobs:
